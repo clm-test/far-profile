@@ -6,9 +6,9 @@ import {
   makeCastAdd,
 } from "@farcaster/core";
 import { hexToBytes } from "@noble/hashes/utils";
-import axios from "axios";
+// import axios from "axios";
 
-const appUrl = process.env.NEXT_PUBLIC_URL;
+// const appUrl = process.env.NEXT_PUBLIC_URL;
 const lfid: string = "2";
 
 const timeAgo = getTimeAgo(1706981726);
