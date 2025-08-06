@@ -6,15 +6,15 @@ import {
   makeCastAdd,
 } from "@farcaster/core";
 import { hexToBytes } from "@noble/hashes/utils";
-// import axios from "axios";
+import axios from "axios";
 
-// const appUrl = process.env.NEXT_PUBLIC_URL;
-const lfid: string = "2";
+const appUrl = process.env.NEXT_PUBLIC_URL;
+let lfid: string = "";
 
 const timeAgo = getTimeAgo(1706981726);
 
-// const lresponse = await axios.get(`${appUrl}/api/lastFID`);
-// lfid = lresponse.data.lastFid;
+const lresponse = await axios.get(`${appUrl}/api/lastFID`);
+lfid = lresponse.data.lastFid;
 
 
 function getTimeAgo(timestamp: number): string {
